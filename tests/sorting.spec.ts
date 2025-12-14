@@ -4,7 +4,7 @@ import { list_url, inventory_sort } from '../src/fixtures/uiConstants';
 import { InventoryLocator as L } from '../src/locators/inventory.locator';
 
 test.describe('Verify sorting functionality', () => {
-    test('Go to Inventory Page >> sort by name(A-Z)', async ({ loginPage, inventoryPage }) => {
+    test('Sort products by name (A to Z)', async ({ loginPage, inventoryPage }) => {
         await inventoryPage.gotoWithLoginCheck(
             list_url.INVENTORY,
             async () => await loginPage.login(users.valid.username, users.valid.password)
@@ -13,7 +13,7 @@ test.describe('Verify sorting functionality', () => {
         await inventoryPage.verify_sorted_items_by_name_asc();
     });
 
-    test('Go to Inventory Page >> sort by name(Z-A)', async ({ loginPage, inventoryPage }) => {
+    test('Sort products by name (Z to A)', async ({ loginPage, inventoryPage }) => {
         await inventoryPage.gotoWithLoginCheck(
             list_url.INVENTORY,
             async () => await loginPage.login(users.valid.username, users.valid.password)
@@ -23,7 +23,7 @@ test.describe('Verify sorting functionality', () => {
         await inventoryPage.verify_sorted_items_by_name_desc();
     });
 
-    test('Go to Inventory Page >> sort by price(low to high) and high to low', async ({ loginPage, inventoryPage }) => {
+    test('Sort products by price (low to high)', async ({ loginPage, inventoryPage }) => {
         await inventoryPage.gotoWithLoginCheck(
             list_url.INVENTORY,
             async () => await loginPage.login(users.valid.username, users.valid.password)
@@ -32,7 +32,7 @@ test.describe('Verify sorting functionality', () => {
         await inventoryPage.verify_sorted_items_by_price_asc();
     });
 
-    test('Go to Inventory Page >> sort by price(high to low)', async ({ loginPage, inventoryPage }) => {
+    test('Sort products by price (high to low)', async ({ loginPage, inventoryPage }) => {
         await inventoryPage.gotoWithLoginCheck(
             list_url.INVENTORY,
             async () => await loginPage.login(users.valid.username, users.valid.password)
