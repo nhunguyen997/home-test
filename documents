@@ -1,0 +1,3 @@
+“I select the first two items deterministically because Saucedemo is a static dataset.
+This ensures test stability, avoids flaky behavior, and makes the test repeatable.
+If this were a real e-commerce system with dynamic product updates, I would switch to dynamic product selection.”
