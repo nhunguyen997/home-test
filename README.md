@@ -3,31 +3,56 @@
 Automated user journeys for the SauceDemo ecommerce site using Playwright (TypeScript) with a Page Object Model for reliability and maintainability.
 
 ## Prerequisites
+
 - Node.js >= 18
 - Git
 
-<!-- ## Install
+## Install
+
+Clone the repository:
+
 ```bash
-git clone https://github.com/your-username/saucedemo-playwright.git
-cd saucedemo-playwright
+git clone https://github.com/nhunguyen997/home-test.git
+cd home-test
+```
+
+Install dependencies:
+
+```bash
 npm install
-npx playwright install -->
+npx playwright install
+```
 
 ## Running Tests
-Install dependencies
-npm install
 
-Open Playwright UI mode
+Open Playwright UI mode:
+
+```bash
 npx playwright test --ui
+```
 
-Run all tests
+Run all tests:
+
+```bash
 npx playwright test
+```
 
-Run a specific test
-npx playwright test tests/checkout.spec.ts
+Run a specific test:
 
-Run with headed
+```bash
+npx playwright test <testscript>
+```
+
+For example: npx playwright test checkout.spec
+
+Run with headed:
+
+```bash
 npx playwright test --headed
+```
 
-Generate report
+Generate report:
+
+```bash
 npx playwright show-report
+```
