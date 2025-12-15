@@ -6,7 +6,7 @@ export const users = {
     password: 'secret_sauce'
   },
   invalid: {
-    username: 'locked_out_user',
+    username: 'invalid_user',
     password: 'secret_sauce'
   }
 };

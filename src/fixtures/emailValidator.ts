@@ -12,7 +12,7 @@ export function validateEmails(emails: string[]): EmailValidationResult {
   const seen = new Set<string>();
 
   for (const email of emails) {
-    // detect duplicate (case-sensitive as required)
+    // detect duplicate 
     if (seen.has(email)) {
       duplicateEmails.push(email);
       continue;
