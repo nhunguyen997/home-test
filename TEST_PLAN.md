@@ -22,7 +22,24 @@ TC-D1: Validate email formats
 TC-D2: Detect duplicate emails
 
 ### Additional tests
+A. Login & User Handling
+- Attempt login with the remaining demo users and verify the corresponding error messages.
+- Attempt login with empty username, empty password, or both fields empty, and validate the error messages.
 
+B. Inventory & Product Details
+- Verify that all products have valid images.
+- Click Add to Cart and check that the button changes to Remove, then click Remove and check that it changes back to Add to Cart.
+
+C. Sorting
+- After applying a sort option, refresh the page and verify that the selected sort option persists.
+
+D. Cart & Checkout
+- Add multiple products and then remove all of them, ensuring the cart is empty.
+- Verify that the badge count on the cart icon matches the actual number of products in the cart (Add/Remove)
+- From checkout, navigate back to the inventory page and confirm the cart contents remain accurate.
+- From checkout, click the Continue Shopping button to return to the inventory page and confirm the cart contents remain accurate.
+- Validate that appropriate error messages are displayed when first name, last name, or postal code fields are left blank.
+- At checkout step 2, click Cancel and verify that you return to checkout step 1.
 
 ### Any risks or flaky areas 
 Data dependency
